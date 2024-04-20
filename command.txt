@@ -26,3 +26,33 @@ error: remote origin already exists.
 
 D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin master
 info: please complete authentication in your browser.
+
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   command.txt
+
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "command file"
+[master ab56571] command file
+ 1 file changed, 28 insertions(+)
+ create mode 100644 command.txt
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 741 bytes | 370.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Visweshvar-Axel/splitmaster.git
+   35addd5..ab56571  master -> master
+branch 'master' set up to track 'origin/master'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>
