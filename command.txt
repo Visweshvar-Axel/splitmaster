@@ -56,3 +56,137 @@ To https://github.com/Visweshvar-Axel/splitmaster.git
 branch 'master' set up to track 'origin/master'.
 
 D:\UST\GIT GITHUB\workspace\splitmate>
+
+D:\UST\GIT GITHUB\workspace\splitmate>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+        modified:   command.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "about and cmd changes"
+[master 6b0b91d] about and cmd changes
+ 2 files changed, 32 insertions(+), 1 deletion(-)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.05 KiB | 540.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Visweshvar-Axel/splitmaster.git
+   ab56571..6b0b91d  master -> master
+branch 'master' set up to track 'origin/master'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>git log
+commit 6b0b91d8bd8351a5f6539d47a937cdabadbb6c70 (HEAD -> master, origin/master)
+Author: Visweshvar-Axel <118894317+Visweshvar-Axel@users.noreply.github.com>
+Date:   Sat Apr 20 19:24:07 2024 +0530
+
+    about and cmd changes
+
+commit ab5657123d0168733c16fd1382f07739ae5261c2
+Author: Visweshvar-Axel <118894317+Visweshvar-Axel@users.noreply.github.com>
+Date:   Sat Apr 20 19:21:58 2024 +0530
+
+    command file
+
+commit 35addd52efbcea5f2f87c43195687e1abaa9c1b6
+Author: Visweshvar-Axel <118894317+Visweshvar-Axel@users.noreply.github.com>
+Date:   Sat Apr 20 19:15:09 2024 +0530
+
+    first upload
+
+D:\UST\GIT GITHUB\workspace\splitmate>git log --oneli
+ne
+6b0b91d (HEAD -> master, origin/master) about and cmd changes
+ab56571 command file
+35addd5 first upload
+
+D:\UST\GIT GITHUB\workspace\splitmate>git diff 35addd5 6b0b91d
+diff --git a/about.html b/about.html
+index 60c7a00..38992ce 100644
+--- a/about.html
++++ b/about.html
+@@ -7,5 +7,6 @@
+ </head>
+ <body>
+     <h2>About</h2>
++    <p>Lorem ipsum dolor sit amet.</p>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/command.txt b/command.txt
+new file mode 100644
+index 0000000..bd0a799
+--- /dev/null
++++ b/command.txt
+@@ -0,0 +1,58 @@
++D:\UST\GIT GITHUB\workspace\splitmate>git init
++Reinitialized existing Git repository in D:/UST/GIT GITHUB/workspace/splitmate/.git/
++
++D:\UST\GIT GITHUB\workspace\splitmate>git add .
++
++D:\UST\GIT GITHUB\workspace\splitmate>git status
++On branch master
++
++No commits yet
++
++Changes to be committed:
++  (use "git rm --cached <file>..." to unstage)
++        new file:   about.html
++        new file:   index.html
++
++
++D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "
++first upload"
++[master (root-commit) 35addd5] first upload
++ 2 files changed, 22 insertions(+)
++ create mode 100644 about.html
++ create mode 100644 index.html
++
++D:\UST\GIT GITHUB\workspace\splitmate>git remote add origin https://github.com/Visweshvar-Axel/splitmaster.git
++error: remote origin already exists.
++
++D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin master
++info: please complete authentication in your browser.
++
++
++D:\UST\GIT GITHUB\workspace\splitmate>git add .
++
++D:\UST\GIT GITHUB\workspace\splitmate>git status
++On branch master
++Your branch is up to date with 'origin/master'.
++
++Changes to be committed:
++  (use "git restore --staged <file>..." to unstage)
++        new file:   command.txt
++
++
++D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "command file"
++[master ab56571] command file
++ 1 file changed, 28 insertions(+)
++ create mode 100644 command.txt
++
++D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin master
++Enumerating objects: 4, done.
++Counting objects: 100% (4/4), done.
++Delta compression using up to 12 threads
++Compressing objects: 100% (3/3), done.
++Writing objects: 100% (3/3), 741 bytes | 370.00 KiB/s, done.
++Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
++To https://github.com/Visweshvar-Axel/splitmaster.git
++   35addd5..ab56571  master -> master
++branch 'master' set up to track 'origin/master'.
++
++D:\UST\GIT GITHUB\workspace\splitmate>
+\ No newline at end of file
