@@ -190,3 +190,120 @@ index 0000000..bd0a799
 +
 +D:\UST\GIT GITHUB\workspace\splitmate>
 \ No newline at end of file
+
+D:\UST\GIT GITHUB\workspace\splitmate>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\UST\GIT GITHUB\workspace\splitmate>git stash
+Saved working directory and index state WIP on master: b69df5b about and cmd changes 1
+
+D:\UST\GIT GITHUB\workspace\splitmate>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+D:\UST\GIT GITHUB\workspace\splitmate>
+D:\UST\GIT GITHUB\workspace\splitmate>git stash pop
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (14672f6844773d5b6a2e5139e31cb9af696d43ce)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git stash list
+
+D:\UST\GIT GITHUB\workspace\splitmate>git stash save
+"about"
+Saved working directory and index state On master: about
+
+D:\UST\GIT GITHUB\workspace\splitmate>git stash save "index"
+Saved working directory and index state On master: index
+
+D:\UST\GIT GITHUB\workspace\splitmate>git stash list
+stash@{0}: On master: index
+stash@{1}: On master: about
+
+D:\UST\GIT GITHUB\workspace\splitmate>git stash apply
+ 0
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\UST\GIT GITHUB\workspace\splitmate>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "
+index update"
+[master 4594711] index update
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+                                      git push -u origi
+Enumerating objects: 5, done.plitmate>git push -u origin master
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Visweshvar-Axel/splitmaster.git
+   b69df5b..4594711  master -> master
+branch 'master' set up to track 'origin/master'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>
+D:\UST\GIT GITHUB\workspace\splitmate>git stash apply 1
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "about update"
+[master 8914b05] about update
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 375 bytes | 375.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Visweshvar-Axel/splitmaster.git
+   4594711..8914b05  master -> master
+branch 'master' set up to track 'origin/master'.
