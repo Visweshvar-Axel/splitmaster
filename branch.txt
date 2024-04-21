@@ -1,0 +1,12 @@
+D:\UST\GIT GITHUB\workspace\splitmate>git branch
+* master
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch feature-button
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch
+  feature-button
+* master
+
+D:\UST\GIT GITHUB\workspace\splitmate>git checkout feature-button
+Switched to branch 'feature-button'
+
