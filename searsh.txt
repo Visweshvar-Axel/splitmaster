@@ -1,0 +1,37 @@
+D:\UST\GIT GITHUB\workspace\splitmate>git branch
+  feature-button
+* master
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch search
+
+D:\UST\GIT GITHUB\workspace\splitmate>git checkout search
+Switched to branch 'search'
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch
+  feature-button
+  master
+* search
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "search branch"
+[search c421fe3] search branch
+ 2 files changed, 12 insertions(+)
+ create mode 100644 search.html
+ create mode 100644 searsh.txt
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin search
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 513 bytes | 513.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'search' on GitHub by visiting:
+remote:      https://github.com/Visweshvar-Axel/splitmaster/pull/new/search
+remote:
+To https://github.com/Visweshvar-Axel/splitmaster.git
+ * [new branch]      search -> search
+branch 'search' set up to track 'origin/search'.
