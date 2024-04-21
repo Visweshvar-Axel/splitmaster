@@ -35,3 +35,66 @@ remote:
 To https://github.com/Visweshvar-Axel/splitmaster.git
  * [new branch]      search -> search
 branch 'search' set up to track 'origin/search'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch
+  feature-button
+* master
+  search
+
+D:\UST\GIT GITHUB\workspace\splitmate>git checkout search
+Switched to branch 'search'
+Your branch is up to date with 'origin/search'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>git pull origin master
+From https://github.com/Visweshvar-Axel/splitmaster
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ index.html | 3 +++
+ 1 file changed, 3 insertions(+)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "pull commit"
+On branch search
+Your branch is ahead of 'origin/search' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin search
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 351 bytes | 351.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Visweshvar-Axel/splitmaster.git
+   98c6828..5b88ffa  search -> search
+branch 'search' set up to track 'origin/search'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>git merge search
+Updating f4af853..5b88ffa
+Fast-forward
+ searsh.txt | 37 +++++++++++++++++++++++++++++++++++++
+ 1 file changed, 37 insertions(+)
+ create mode 100644 searsh.txt
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "merge search"
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Visweshvar-Axel/splitmaster.git
+   f4af853..5b88ffa  master -> master
+branch 'master' set up to track 'origin/master'.
