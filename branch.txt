@@ -10,3 +10,68 @@ D:\UST\GIT GITHUB\workspace\splitmate>git branch
 D:\UST\GIT GITHUB\workspace\splitmate>git checkout feature-button
 Switched to branch 'feature-button'
 
+D:\UST\GIT GITHUB\workspace\splitmate>git status
+On branch feature-button
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        branch.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "branch start"
+[feature-button 140ddf1] branch start
+ 2 files changed, 13 insertions(+)
+ create mode 100644 branch.txt
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin feature-button
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 547 bytes | 547.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature-button' on GitHub by visiting:
+remote:      https://github.com/Visweshvar-Axel/splitmaster/pull/new/feature-button
+remote:
+To https://github.com/Visweshvar-Axel/splitmaster.git
+ * [new branch]      feature-button -> feature-button
+branch 'feature-button' set up to track 'origin/feature-button'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>git status
+On branch feature-button
+Your branch is up to date with 'origin/feature-button'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "update about"
+[feature-button 555cce6] update about
+ 1 file changed, 1 insertion(+)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin feature-button
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 456 bytes | 456.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Visweshvar-Axel/splitmaster.git
+   140ddf1..555cce6  feature-button -> feature-button
+branch 'feature-button' set up to track 'origin/feature-button'.
+
