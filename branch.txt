@@ -75,3 +75,63 @@ To https://github.com/Visweshvar-Axel/splitmaster.git
    140ddf1..555cce6  feature-button -> feature-button
 branch 'feature-button' set up to track 'origin/feature-button'.
 
+D:\UST\GIT GITHUB\workspace\splitmate>git branch dummy
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch
+  dummy
+  feature-button
+* master
+
+D:\UST\GIT GITHUB\workspace\splitmate>git checkout dummy
+Switched to branch 'dummy'
+M       index.html
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "dummy"
+[dummy af51f3d] dummy
+ 1 file changed, 2 insertions(+)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin dummy
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'dummy' on GitHub by visiting:
+remote:      https://github.com/Visweshvar-Axel/splitmaster/pull/new/dummy
+remote:
+To https://github.com/Visweshvar-Axel/splitmaster.git
+ * [new branch]      dummy -> dummy
+branch 'dummy' set up to track 'origin/dummy'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push origin --delete dummy
+To https://github.com/Visweshvar-Axel/splitmaster.git
+ - [deleted]         dummy
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch
+* dummy
+  feature-button
+  master
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch -d dummy
+error: Cannot delete branch 'dummy' checked out at 'D:/UST/GIT GITHUB/workspace/splitmate'
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch
+* dummy
+  feature-button
+  master
+
+D:\UST\GIT GITHUB\workspace\splitmate>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch -d dummy
+error: The branch 'dummy' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D dummy'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch -D dummy
+Deleted branch dummy (was af51f3d).
