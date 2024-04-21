@@ -105,3 +105,47 @@ Deleted branch search (was 5b88ffa).
 D:\UST\GIT GITHUB\workspace\splitmate>git push origin --delete search
 To https://github.com/Visweshvar-Axel/splitmaster.git
  - [deleted]         search
+
+
+ D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "change search"
+[master ea40b9b] change search
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin master
+To https://github.com/Visweshvar-Axel/splitmaster.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Visweshvar-Axel/splitmaster.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\UST\GIT GITHUB\workspace\splitmate>git pull origin master
+From https://github.com/Visweshvar-Axel/splitmaster
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ index.html | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "change search"
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 589 bytes | 589.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/Visweshvar-Axel/splitmaster.git
+   573e409..deee0b7  master -> master
+branch 'master' set up to track 'origin/master'.
