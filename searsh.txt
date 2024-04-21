@@ -98,3 +98,10 @@ Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Visweshvar-Axel/splitmaster.git
    f4af853..5b88ffa  master -> master
 branch 'master' set up to track 'origin/master'.
+
+D:\UST\GIT GITHUB\workspace\splitmate>git branch -d search
+Deleted branch search (was 5b88ffa).
+
+D:\UST\GIT GITHUB\workspace\splitmate>git push origin --delete search
+To https://github.com/Visweshvar-Axel/splitmaster.git
+ - [deleted]         search
