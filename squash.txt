@@ -87,3 +87,55 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/Visweshvar-Axel/splitmaster.git
    2f697a0..d075876  master -> master
 branch 'master' set up to track 'origin/master'.
+
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -a -m "about button"
+[master 9c4ea2d] about button
+ 1 file changed, 2 insertions(+)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -a -m "search button"
+[master ace9f35] search button
+ 1 file changed, 2 insertions(+)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git log --oneline
+ace9f35 (HEAD -> master) search button
+9c4ea2d about button
+34acc91 (origin/master) setup structure
+d075876 update index
+2f697a0 error push and pull
+
+D:\UST\GIT GITHUB\workspace\splitmate>git revert HEAD~3
+[master a2ffe6b] Revert "about button"
+ 1 file changed, 2 deletions(-)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git log --oneline
+a2ffe6b (HEAD -> master) Revert "about button"
+cfd99af Revert "Revert "setup structure""
+2e4c356 Revert "setup structure"
+ace9f35 search button
+9c4ea2d about button
+34acc91 (origin/master) setup structure
+d075876 update index
+2f697a0 error push and pull
+deee0b7 Merge branch 'master' of https://github.com/Visweshvar-Axel/splitmaster
+ea40b9b change search
+573e409 Update index.html
+cb5ef5a search cmd delete
+4d1a59e search cmd
+5b88ffa Merge branch 'master' of https://github.com/Visweshvar-Axel/splitmaster into search
+f4af853 index update
+2d34bda search in master
+98c6828 search branch
+c421fe3 search branch
+b4607b5 dummy cmd
+97219ea (origin/feature-button, feature-button) branch cmd
+555cce6 update about
+140ddf1 branch start
+9812286 restore cmd
+4b240e5 index update
+8914b05 about update
+4594711 index update
+b69df5b about and cmd changes 1
+6b0b91d about and cmd changes
+ab56571 command file
+35addd5 first upload
