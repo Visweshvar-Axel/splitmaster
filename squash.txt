@@ -139,3 +139,129 @@ b69df5b about and cmd changes 1
 6b0b91d about and cmd changes
 ab56571 command file
 35addd5 first upload
+
+
+D:\UST\GIT GITHUB\workspace\splitmate>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   squash.txt
+
+
+D:\UST\GIT GITHUB\workspace\splitmate>git reset
+Unstaged changes after reset:
+M       index.html
+M       squash.txt
+
+D:\UST\GIT GITHUB\workspace\splitmate>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   squash.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\UST\GIT GITHUB\workspace\splitmate>git add .
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -m "reset cmd"
+[master a5a300e] reset cmd
+ 2 files changed, 137 insertions(+), 2 deletions(-)
+
+D:\UST\GIT GITHUB\workspace\splitmate>git commit -a -m "about 2"
+[master 6c41a6e] about 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ D:\UST\GIT GITHUB\workspace\splitmate>git commit -a -m "+p"
+[master b324f6f] +p
+ 1 file changed, 1 insertion(+)
+
+ D:\UST\GIT GITHUB\workspace\splitmate>git log --oneline
+b324f6f (HEAD -> master) +p
+6c41a6e about 2
+a5a300e reset cmd
+e136d2e (origin/master) +p about
+9878245 revert cmd
+a2ffe6b Revert "about button"
+cfd99af Revert "Revert "setup structure""
+2e4c356 Revert "setup structure"
+ace9f35 search button
+9c4ea2d about button
+34acc91 setup structure
+d075876 update index
+2f697a0 error push and pull
+deee0b7 Merge branch 'master' of https://github.com/Visweshvar-Axel/splitmaster
+ea40b9b change search
+573e409 Update index.html
+cb5ef5a search cmd delete
+4d1a59e search cmd
+5b88ffa Merge branch 'master' of https://github.com/Visweshvar-Axel/splitmaster into search
+f4af853 index update
+2d34bda search in master
+98c6828 search branch
+c421fe3 search branch
+b4607b5 dummy cmd
+97219ea (origin/feature-button, feature-button) branch cmd
+555cce6 update about
+140ddf1 branch start
+9812286 restore cmd
+4b240e5 index update
+8914b05 about update
+4594711 index update
+b69df5b about and cmd changes 1
+6b0b91d about and cmd changes
+ab56571 command file
+35addd5 first upload
+
+D:\UST\GIT GITHUB\workspace\splitmate>git reset --hard HEAD~0
+HEAD is now at b324f6f +p
+
+D:\UST\GIT GITHUB\workspace\splitmate>git reset --hard HEAD~1
+HEAD is now at 6c41a6e about 2
+
+D:\UST\GIT GITHUB\workspace\splitmate>git reset --hard HEAD~2
+HEAD is now at e136d2e +p about
+
+D:\UST\GIT GITHUB\workspace\splitmate>git log --oneline
+e136d2e (HEAD -> master, origin/master) +p about
+9878245 revert cmd
+a2ffe6b Revert "about button"
+cfd99af Revert "Revert "setup structure""
+2e4c356 Revert "setup structure"
+ace9f35 search button
+9c4ea2d about button
+34acc91 setup structure
+d075876 update index
+2f697a0 error push and pull
+deee0b7 Merge branch 'master' of https://github.com/Visweshvar-Axel/splitmaster
+ea40b9b change search
+573e409 Update index.html
+cb5ef5a search cmd delete
+4d1a59e search cmd
+5b88ffa Merge branch 'master' of https://github.com/Visweshvar-Axel/splitmaster into search
+f4af853 index update
+2d34bda search in master
+98c6828 search branch
+c421fe3 search branch
+b4607b5 dummy cmd
+97219ea (origin/feature-button, feature-button) branch cmd
+555cce6 update about
+140ddf1 branch start
+9812286 restore cmd
+4b240e5 index update
+8914b05 about update
+4594711 index update
+b69df5b about and cmd changes 1
+6b0b91d about and cmd changes
+ab56571 command file
+35addd5 first upload
