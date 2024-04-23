@@ -1,0 +1,48 @@
+PS D:\UST\GIT GITHUB\workspace\splitmate> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tamp.txt
+
+PS D:\UST\GIT GITHUB\workspace\splitmate> git add .gitignore
+PS D:\UST\GIT GITHUB\workspace\splitmate> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tamp.txt
+
+PS D:\UST\GIT GITHUB\workspace\splitmate> git commit -m "git ignore"
+[master c1e857f] git ignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+PS D:\UST\GIT GITHUB\workspace\splitmate> git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tamp.txt
