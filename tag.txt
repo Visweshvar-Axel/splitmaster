@@ -19,3 +19,34 @@ PS D:\UST\GIT GITHUB\workspace\splitmate> git push origin v0.1
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Visweshvar-Axel/splitmaster.git
  * [new tag]         v0.1 -> v0.1
+PS D:\UST\GIT GITHUB\workspace\splitmate> git commit -a -m "tag cmd"
+[master 265130d] tag cmd
+ 1 file changed, 21 insertions(+)
+PS D:\UST\GIT GITHUB\workspace\splitmate> git tag v0.2
+PS D:\UST\GIT GITHUB\workspace\splitmate> git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 727 bytes | 727.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Visweshvar-Axel/splitmaster.git
+   12500f5..265130d  master -> master
+PS D:\UST\GIT GITHUB\workspace\splitmate> git push origin v0.2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Visweshvar-Axel/splitmaster.git
+ * [new tag]         v0.2 -> v0.2
+PS D:\UST\GIT GITHUB\workspace\splitmate> git tag --list
+v0.1
+v0.2
+PS D:\UST\GIT GITHUB\workspace\splitmate> git tag v0.3
+PS D:\UST\GIT GITHUB\workspace\splitmate> git tag --list
+v0.1
+v0.2
+v0.3
+PS D:\UST\GIT GITHUB\workspace\splitmate> git tag -d v0.3
+Deleted tag 'v0.3' (was 265130d)
+PS D:\UST\GIT GITHUB\workspace\splitmate> git tag --list
+v0.1
+v0.2
