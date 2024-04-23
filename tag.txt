@@ -1,0 +1,21 @@
+PS D:\UST\GIT GITHUB\workspace\splitmate> git tag v0.1
+PS D:\UST\GIT GITHUB\workspace\splitmate> git add .
+PS D:\UST\GIT GITHUB\workspace\splitmate> git commit -m "+tag"
+[master 12500f5] +tag
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tag.txt
+PS D:\UST\GIT GITHUB\workspace\splitmate> git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Visweshvar-Axel/splitmaster.git
+   a5f9caa..12500f5  master -> master
+branch 'master' set up to track 'origin/master'.
+PS D:\UST\GIT GITHUB\workspace\splitmate> git push origin v0.1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Visweshvar-Axel/splitmaster.git
+ * [new tag]         v0.1 -> v0.1
